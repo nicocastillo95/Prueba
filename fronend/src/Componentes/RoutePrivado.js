@@ -7,10 +7,11 @@ const PrivateRoute = ({component: Component, ...rest}) =>(
     <Route
     {...rest}
     render = { props =>
-        localStorage.getItem('token') !== undefined ? (
-            <Component {...props}/>
-        ):(
+        localStorage.getItem('token') == undefined ? (
             <Redirect to="/login"/>
+        ):(
+            <Component {...props}/>
+            
         )
 
     }/>

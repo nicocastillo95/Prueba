@@ -5,7 +5,8 @@ export default class Categorias extends Component {
 
 
     async componentDidMount(){
-        const res = await axios.get('http://localhost:8080/categoria/');
+        const res = await axios.get(`http://localhost:8080/categoarias/`);
+        
     console.log(res)
     }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
 export default class PaginaPrincipal extends Component {
+    
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">

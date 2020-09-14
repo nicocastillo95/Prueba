@@ -26,6 +26,7 @@ export default class Registrar extends Component {
         });
         console.log(res)
         localStorage.setItem('token', res.data.token);
+        localStorage.setItem('usuario',res.data.usuario._id);
     }
 
     onChangeNombre = (objeto)=>{

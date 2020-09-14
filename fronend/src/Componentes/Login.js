@@ -35,11 +35,13 @@ export default class Login extends React.Component {
         objeto.preventDefault()
         const { email, contrasenia } = this.state;
         const token = await Axios.post("http://localhost:8080/usuarios/login", { email, contrasenia })
+        console.log(localStorage.getItem('token'))
         localStorage.setItem('token', token.data.token);
         this.setState({
             logeado: true
         })
-       
+
+
         localStorage.setItem('usuario',token.data.usuario._id);
     }
 
