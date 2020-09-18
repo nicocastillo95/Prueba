@@ -1,0 +1,116 @@
+.left-column {
+    padding: 0.8rem 1rem 0.8rem 0.6vw !important;
+    background-color: var(--color1);
+    min-width: 140px;
+}
+
+@media (min-width: 1040px) {
+    .left-column {
+        padding: 0.8rem 1rem 0.8rem 1rem !important;
+
+    }
+}
+
+.dark .left-column-content {
+    height: 100%;
+}
+
+.categorias-container {
+
+    position: fixed;
+    top: 130px;
+}
+
+.left-column h3 {
+    margin: 20px 15px 1vw;
+    font-size: 1.8vw;
+}
+
+@media (min-width: 810px) {
+
+    .left-column h3 {
+        margin: 20px 15px 25px;
+        font-size: 1.8vw;
+    }
+}
+
+.categorias {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 1040px) {
+    .categorias {
+        padding-left: 10px;
+    }
+}
+
+.categorias li {
+    width: 100%;
+    margin: 15px 0px;
+    list-style: none;
+}
+
+.categorias li:before {
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0 10px;
+}
+
+.dark .categorias li a {
+    color: #ccc;
+}
+
+.dark .categorias li a:hover {
+    color: #fff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0px 0 20px;
+    width: 13vw;
+
+}
+.footer span {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+
+.categorias li.Música:before {
+    background-image: url("../../assets/img/musica-icon.svg");
+}
+
+.categorias li.Lugares:before {
+    background-image: url("../../assets/img/lugares-icon.svg");
+}
+
+.categorias li.Humor:before {
+    background-image: url("../../assets/img/humor-icon.svg");
+}
+
+.categorias li.Animales:before {
+    background-image: url("../../assets/img/animales-icon.svg");
+}
+
+.categorias li.Deportes:before {
+    background-image: url("../../assets/img/deportes-icon.svg");
+}
+
+.categorias li.Juegos:before {
+    background-image: url("../../assets/img/juegos-icon.svg");
+}
+
+.categorias li.Cartoon:before {
+    background-image: url("../../assets/img/cartoon-icon.svg");
+}
